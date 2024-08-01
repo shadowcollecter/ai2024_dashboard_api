@@ -100,5 +100,5 @@ paths:
 
 servers:
   # Added by API Auto Mocking Plugin
-  - description: 會生出來
-    url: https://google.com
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/ai2024/ai2024_dashboard_api/1.0.0

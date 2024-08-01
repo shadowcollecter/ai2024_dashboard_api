@@ -105,7 +105,3 @@ paths:
                   error:
                     type: string
                     example: Invalid time format
-servers:
-  # Added by API Auto Mocking Plugin
-  - description: SwaggerHub API Auto Mocking
-    url: https://virtserver.swaggerhub.com/ai2024/ai2024_dashboard_api/1.0.0

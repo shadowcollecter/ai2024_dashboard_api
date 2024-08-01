@@ -6,16 +6,8 @@ paths:
   /api/v1/generate-violation-report:
     post:
       summary: Generate and send computer room violation reports within seven days
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                email:
-                  type: string
-                  example: user@example.com
+      # requestBody:
+      #   required: false
       responses:
         '200':
           description: Report generation request accepted
@@ -36,7 +28,7 @@ paths:
                 properties:
                   error:
                     type: string
-                    example: Invalid email address
+                    example: Request error
 
   /api/v1/report-status/{reportId}:
     get:
@@ -105,3 +97,8 @@ paths:
                   error:
                     type: string
                     example: Invalid time format
+
+servers:
+  # Added by API Auto Mocking Plugin
+  - description: 會生出來
+    url: https://google.com

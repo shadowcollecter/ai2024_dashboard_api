@@ -85,8 +85,13 @@ paths:
                           format: date-time
                         cameraId:
                           type: string
+                          example: "01機房左側"
                         violationType:
                           type: string
+                          example: "進食"
+                        ruleId:
+                          type: string
+                          example: "201"
         '400':
           description: Request parameter error
           content:
